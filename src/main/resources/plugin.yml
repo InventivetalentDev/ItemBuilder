@@ -1,0 +1,4 @@
+name: ItemBuilder
+main: org.inventivetalent.itembuilder.TestPlugin
+author: inventivetalent
+version: ${project.version}
