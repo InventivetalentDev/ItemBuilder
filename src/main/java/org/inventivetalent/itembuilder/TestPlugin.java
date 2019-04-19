@@ -43,5 +43,6 @@ public class TestPlugin extends JavaPlugin implements Listener{
 
 	@EventHandler
 	public void onInteract(PlayerInteractEvent event) {
+		Bukkit.getServer().createBlockData("");
 	}
 }

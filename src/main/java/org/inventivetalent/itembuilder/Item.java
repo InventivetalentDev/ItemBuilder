@@ -118,11 +118,7 @@ public class Item extends ItemAbstract {
 			for (ItemFlag flag : this.flags) {
 				meta.addItemFlags(flag);
 			}
-			try {
-				meta.spigot().setUnbreakable(this.unbreakable);
-			} catch (Exception ignored) {
-				// Probably not spigot
-			}
+			meta.setUnbreakable(this.unbreakable);
 			itemStack.setItemMeta(meta);
 		}
 		return itemStack;
@@ -164,11 +160,7 @@ public class Item extends ItemAbstract {
 			builder.displayName(itemStack.getItemMeta().getDisplayName());
 			builder.lore(itemStack.getItemMeta().getLore());
 			builder.enchants(itemStack.getItemMeta().getEnchants());
-			try {
-				builder.unbreakable(itemStack.getItemMeta().spigot().isUnbreakable());
-			} catch (Exception ignored) {
-				// Probably not spigot
-			}
+			builder.unbreakable(itemStack.getItemMeta().isUnbreakable());
 		}
 		return builder.build();
 	}

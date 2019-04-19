@@ -42,6 +42,9 @@ import org.bukkit.inventory.meta.SkullMeta;
 @NoArgsConstructor
 public class SkullItem extends Item {
 
+	//  TODO: update this class to use UUIDs
+	//   and maybe even custom texture data
+
 	private String owner;
 
 	@Override
