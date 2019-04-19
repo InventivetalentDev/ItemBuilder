@@ -91,12 +91,12 @@
         <repository>
             <id>releases</id>
             <name>Internal Releases</name>
-            <url>http://repo.inventivetalent.org/content/repositories/releases/</url>
+            <url>https://repo.inventivetalent.org/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
             <name>Internal Releases</name>
-            <url>http://repo.inventivetalent.org/content/repositories/snapshots/</url>
+            <url>https://repo.inventivetalent.org/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
     <dependencies>
